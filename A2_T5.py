@@ -1,0 +1,12 @@
+print("Program starting.\n")
+Word = input("Insert a closed compound word: ")
+print("The word you inserted is ", "'", Word, "'", " and in reverse it is ", "'", Word[::-1], "'.", sep="")
+print("The inserted word length is", len(Word))
+print("Last character is ", "'", Word[-1], "'", sep="")
+print("\nTake substring from the inserted word by inserting...")
+Start = int(input("1) Starting point: "))
+End = int(input("2) Ending point: "))
+Step = int(input("3) Step size: "))
+String = Word[Start:End:Step]
+print("\nThe word ", "'", Word, "'", " sliced to the defined substring is ", "'", String, "'.", sep="")
+print("Program ending.")

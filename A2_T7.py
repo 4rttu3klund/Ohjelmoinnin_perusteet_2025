@@ -1,0 +1,5 @@
+print("Program starting.")
+Fahrenheit = float(input("Insert fahrenheits: "))
+Celsius = round((Fahrenheit - 32) / 1.8, 1)
+print(Fahrenheit, "°F is ", Celsius, "°C", sep="")
+print("Program ending.")
