@@ -3,13 +3,13 @@ print("Program starting.")
 print("\nOptions:\n1 - Celsius to Fahrenheit\n2 - Fahrenheit to Celsius\n0 - Exit")
 Choice = int(input("Your choice: "))
 if Choice == 1:
-    Celsius = round(float(input("Insert the amount of Celsius: ")), 1)
-    Fahrenheit = round((Celsius * 1.8) + 32, 1)
-    print(Celsius, "°C equals to ", Fahrenheit, "°F")
+    Celsius = float(input("Insert the amount of Celsius: "))
+    Fahrenheit = (Celsius * 1.8) + 32
+    print(round(Celsius, 1), "°C equals to ", round(Fahrenheit, 1), "°F")
 elif Choice == 2:
-    Fahrenheit = round(float(input("Insert the amount of Fahrenheit: ")), 1)
-    Celsius = round((Fahrenheit - 32) / 1.8, 1)
-    print(Fahrenheit, "°F equals to ", Celsius, "°C")
+    Fahrenheit = float(input("Insert the amount of Fahrenheit: "))
+    Celsius = (Fahrenheit - 32) / 1.8
+    print(round(Fahrenheit, 1), "°F equals to ", round(Celsius, 1), "°C")
 elif Choice == 0:
     print("Exiting...")
 
